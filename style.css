@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -437,12 +441,7 @@ nav .caret {
 
 .mg-md {
     margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.mg-lg {
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .btn {
@@ -462,10 +461,6 @@ nav .caret {
 
 button {
     outline: none!important;
-}
-
-.btn-rd {
-    border-radius: 40px;
 }
 
 .btn-clean {
@@ -630,12 +625,12 @@ a[data-lightbox]:hover img {
 }
 
 .snapshot-lb .modal-body {
-    padding-bottom: 45px;
+    padding-bottom: 80px;
 }
 
 .snapshot-lb .lightbox-caption {
     padding: 0;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .8);
     background: none;
 }
 
@@ -832,6 +827,35 @@ h4 {
     z-index: 1;
 }
 
+.head-fix{
+    position: fixed;
+	top: 0px;
+    z-index: 999;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, .5);
+}
+
+.head__banner{
+    margin-top: 85px;
+}
+
+.formulaire{
+    font-size: 1.5em;
+    color: #a23908;
+    margin-top: -10px;
+}
+
+.title_services{
+    margin-top: 40px;
+}
+
+.description_concept{
+    font-size: 1em;
+}
+
+.data-caption{
+    font-size: 0.5em;
+}
+
 .box{
     position: relative;
     margin: auto;
@@ -871,7 +895,7 @@ h4 {
 
 .box .inputBox input:focus ~ label,
 .box .inputBox input:valid ~ label{
-    top: -18px;
+    top: -23px;
     left: 0;
     font-size: 0.9em;
     color: #a23908;
@@ -880,13 +904,18 @@ h4 {
 
 .box input[type="submit"]{
     background: transparent;
-    border: none;
     outline: none;
     color: #FFFFFF;
     background: #a23908;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    font-size: large;
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-bottom-color: rgba(0, 0, 0, .1);
+    text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
+    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
 .adresse{
@@ -905,6 +934,33 @@ h4 {
 .adresse p{
     color: #ffffff;
 }
+
+.citation{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, .5);
+}
+
+.citation__sign{
+    font-weight: 600;
+    font-size: 0.9em;
+    line-height: 0.5;
+}
+
+.texture{
+    width: 45%;
+    margin: auto;
+    padding: 10px;
+    background: black;
+    opacity: 0.65;
+    border-radius: 5px;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, .5);
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
