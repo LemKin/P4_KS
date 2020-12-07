@@ -651,7 +651,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #000000!important;
+    color: #000000;
 }
 
 .container {
@@ -777,7 +777,7 @@ h4 {
 }
 
 .tc-white {
-    color: rgb(255, 255, 255)!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
@@ -825,6 +825,85 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+}
+
+.image-resize-contact{
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.box{
+    position: relative;
+    margin: auto;
+    margin-top: -20px;
+    width: 500px;
+    padding: 40px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+}
+
+.box .inputBox{
+    position: relative;
+}
+
+.box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.box .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+    top: -18px;
+    left: 0;
+    font-size: 0.9em;
+    color: #a23908;
+}
+
+
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    background: #a23908;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.adresse{
+    left: 50%;
+    margin: auto;
+    top: 25px;
+    color: white;
+    background: #212121;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, .5);
+}
+
+.adresse p{
+    color: #ffffff;
 }
 
 @media (max-width: 1024px) {
@@ -1034,5 +1113,19 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    .box{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .adresse{
+        width: 80%;
+        font-size: 1em;
+    }
+    .tight-width-whitespace{
+        font-size: 1.1em;
+    }
+    .hero-bloc-text{
+        font-size: 2em;
     }
 }
