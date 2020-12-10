@@ -3,12 +3,12 @@
 }
 
 body {
-    margin: 0;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 a,
@@ -834,10 +834,6 @@ h4 {
     box-shadow: 0 0px 25px rgba(0, 0, 0, .5);
 }
 
-.head__banner{
-    margin-top: 85px;
-}
-
 .formulaire{
     font-size: 1.5em;
     color: #a23908;
@@ -1183,5 +1179,9 @@ h4 {
     }
     .hero-bloc-text{
         font-size: 2em;
+    }
+
+    .head__banner{
+        margin-top: 85px;
     }
 }
