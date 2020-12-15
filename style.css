@@ -533,7 +533,8 @@ a[data-lightbox] {
 
 a[data-lightbox]:hover::before {
     content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-family: 'Roboto', sans-serif;
+
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -644,7 +645,7 @@ p,
 label,
 .btn,
 a {
-    font-family: "helvetica";
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #000000;
 }
@@ -682,7 +683,7 @@ p {
 
 .h1 {
     font-size: 20px;
-    font-family: "Open Sans";
+    font-family: 'Roboto', sans-serif;
 }
 
 .cta-hero {
@@ -699,6 +700,9 @@ p {
     margin: auto auto auto auto;
     padding: 10px;
     color: #FFFFFF!important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -945,6 +949,7 @@ h4 {
     font-weight: 600;
     font-size: 0.9em;
     line-height: 0.5;
+    font-style: italic;
 }
 
 .texture{

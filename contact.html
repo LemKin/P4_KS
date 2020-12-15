@@ -5,8 +5,10 @@
         <meta name="description" content="Page pour nous contacter pour tout renseignement et développement de projets" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
         <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
         <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
 
@@ -86,10 +88,16 @@
                             <div class="box">
                                 <form>
                                     <h2 class="formulaire">Formulaire de contact</h2>
+
                                     <div class="inputBox">
                                         <input type="text" name="name" required="">
                                         <label>Votre Nom & Prénom</label>
                                     </div>
+
+                                    <div class="inputBox">
+                                        <label for="name">Votre Nom & Prénom</label><input type="text" name="name" required="">
+                                    </div>
+
                                     <div class="inputBox">
                                         <input type="text" name="email" required="">
                                         <label>Votre adresse e-mail</label>
@@ -102,6 +110,7 @@
                                         <input type="text" name="text" required="">
                                         <label>Brief de votre projet</label>
                                     </div>
+
                                     <input type="submit" name="text" value="ENVOYER">
                                 </form>
                             </div>
